@@ -4,7 +4,12 @@ const images = [
   { src: '/images/Cats.png', alt: 'Image 2 Description' },
   { src: '/images/Loving Birds.png', alt: 'Image 3 Description' },
   { src: '/images/Romantic.png', alt: 'Image 4 Description' },
-  { src: '/images/Night Sky.png', alt: 'Image 5 Description' }
+  { src: '/images/Night Sky.png', alt: 'Image 5 Description' },
+  { src: '/images/Abstract.png', alt: 'Image 6 Description' },
+  { src: '/images/Cherry blossom.png', alt: 'Image 7 Description' },
+  { src: '/images/Hello.png', alt: 'Image 8 Description' },
+  { src: '/images/Ancient Ruins.png', alt: 'Image 9 Description' },
+
 ];
 
 
@@ -26,13 +31,11 @@ import BaseLayout from "../layouts/Layout.astro";
 
       <div class="image-slider" id="slider">
         {clonedImages.map((image, index) => (
-          <a href={image.link} key={index} class="image-slide">
             <img
               src={image.src}
               alt={image.alt}
               class="image-slide-img"
             />
-          </a>
         ))}
       </div>
 
