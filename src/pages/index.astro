@@ -1,16 +1,13 @@
 ---
-
+import BaseLayout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home">
+  <div class="relative h-screen flex items-center justify-center">
+    <a href="/gallery" class="block">
+      <h1 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-40 mb-8 font-tagesschrift breathing-text glow-text cursor-pointer transition hover:scale-110">
+        WELCOME TO ART GALAXY!
+      </h1>
+    </a>
+  </div>
+</BaseLayout>

@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+    --font-oswald: 'Oswald', 'sans-serif';
+    --font-tagesschrift: 'Tagesschrift', 'sans-serif';
+}
+
+html, body {
+    height: 100%; /* Ensure html and body take full viewport height */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Aleo', serif;
+  }
+  
+  main {
+    flex-grow: 1; /* Allow main content to grow and push footer down */
+  }
+  
+  footer {
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+
+  .glow-text {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+
+  .breathing-text {
+    animation: breathing 3s ease-in-out infinite;
+    display: inline-block;
+    font-size: 2rem; /* Adjust as needed */
+  }
+  
+  @keyframes breathing {
+    0% {
+      transform: scale(2);
+    }
+    50% {
+      transform: scale(2.5);
+    }
+    100% {
+      transform: scale(2);
+    }
+  }
+
+  html {
+    scrollbar-width: none;     /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari */
+  }
+
+  .image-blog-layout .image-blog-content p {
+    font-size: 1.2rem;
+    font-family: sans;
+  }
