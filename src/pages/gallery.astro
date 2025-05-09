@@ -9,7 +9,6 @@ const images = [
   { src: '/images/Cherry blossom.png', alt: 'Image 7 Description' },
   { src: '/images/Hello.png', alt: 'Image 8 Description' },
   { src: '/images/Ancient Ruins.png', alt: 'Image 9 Description' },
-
 ];
 
 
@@ -31,11 +30,13 @@ import BaseLayout from "../layouts/Layout.astro";
 
       <div class="image-slider" id="slider">
         {clonedImages.map((image, index) => (
+          <a href={image.link} key={index} class="image-slide">
             <img
               src={image.src}
               alt={image.alt}
               class="image-slide-img"
             />
+          </a>
         ))}
       </div>
 
