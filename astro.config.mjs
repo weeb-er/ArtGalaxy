@@ -7,6 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
-    base: 'Art-Galaxy'
+    base: 'Art-Galaxy',
+    
   }
 });
